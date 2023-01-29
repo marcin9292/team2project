@@ -88,14 +88,14 @@ article img{
     padding-right: 30px;
 }
 
-/* Aside */
 aside{
     width: 30%;
-    padding: 20px;
-    background-color: lightgray;
+ background-image: url('https://polki.pl/foto/4_3_LARGE/drzewa-kwitnace-na-rozowo-ozdobne-drzewka-z-rozowymi-kwiatami-2468283.jpg');
+   background-size: cover;
+ padding: 20px;
     border-left: 1px dashed black;
 }
-
+ 
 .widget{
     margin-bottom: 50px;
 }
@@ -105,6 +105,7 @@ aside{
     /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
     margin: 0 10px 5px 0;
     border: 5px solid red;
+    border-radius: 15px;
 }
 
 /* Links */
