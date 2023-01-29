@@ -8,10 +8,11 @@
 }
 
 /* Body */
-body {
-  margin: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
+
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -20,12 +21,13 @@ img {
 }
 
 /* Container */
-#container {
-  max-width: 1000px;
-  border: 2px solid black;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+#container{
+    max-width: 1000px;
+    border: 2px solid blue;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+
 }
 
 /* Header */
@@ -37,6 +39,7 @@ header {
   background-image: linear-gradient(rgba(255, 255, 255, 0.3), white),
     url("/team2project-1/assets/header.jpg");
   background-size: contain;
+
 }
 
 /* Brand */
@@ -112,23 +115,26 @@ article img {
   padding-right: 30px;
 }
 
-/* Aside */
-aside {
-  width: 30%;
-  padding: 20px;
-  background-color: lightgray;
-  border-left: 1px dashed black;
+
+aside{
+    width: 30%;
+ background-image: url('https://media.istockphoto.com/id/1218172915/photo/spring-flower-background-daffodils-against-a-clear-blue-sky.jpg?s=612x612&w=0&k=20&c=tZu7HVbq3yVRHueGK2ly5l4tsCqUjlgGeIMm85tg0aQ=');
+   background-size: cover;
+ padding: 20px;
+    border-left: 1px dashed black;
+    color: rgb(8, 93, 33);
+}
+ 
+.widget{
+    margin-bottom: 50px;
 }
 
-.widget {
-  margin-bottom: 50px;
-}
-
-.widget img {
-  float: left;
-  /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
-  margin: 0 10px 5px 0;
-  border: 5px solid red;
+.widget img{
+    float: left;
+    /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
+    margin: 0 10px 5px 0;
+    border: 2px solid rgb(12, 103, 22);
+    border-radius: 15px;
 }
 
 /* Links */
@@ -139,8 +145,11 @@ aside {
   margin: 0;
 }
 
-.links ul li {
-  margin-bottom: 10px;
+
+
+.links ul li{
+    margin-bottom: 10px;
+    color: rgb(8, 93, 33);
 }
 
 /* Footer */
@@ -155,4 +164,60 @@ footer {
 footer p {
   margin: 0;
   text-shadow: 2px 2px darkgray;
+}
+
+.form_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dane_osobowe, .umiejetnosci{
+    display: flex;
+    background-color: rgb(200, 200, 200) ;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#btn{
+    margin: 2% 2% 2% 0;
+    padding: 2%;
+    font-weight: 700;
+    font-size: larger;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+  }
+  .slider {
+    display: none;
+  }
+  header {
+    border-bottom: 1px solid gray;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+
+  .links {
+    float: right;
+  }
+
+  .links h4,
+  .links ul {
+    display: inline;
+  }
+  .links ul li {
+    display: inline;
+  }
 }
