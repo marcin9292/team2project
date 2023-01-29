@@ -1,101 +1,134 @@
 /* Reguły CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
 
-*{
-    box-sizing: border-box;
-    /*poczytac jako homework */
+@import url('https://www.google.pl/search?q=lato&sxsrf=AJOqlzWNk5wlQN5C3yOGAFslCbpjRGvGnw:1674998320115&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjVqfr-7uz8AhXvi_0HHbpEBVgQ_AUoAXoECAIQAw&biw=1660&bih=849&dpr=2.25#imgrc=732eVBIAQu8gxM');
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap");
+
+
+* {
+  box-sizing: border-box;
+  /*poczytac jako homework */
 }
 
 /* Body */
+
 body{
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
-
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Container */
 #container{
     max-width: 1000px;
-    border: 2px solid black;
+    border: 2px solid blue;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 6px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
-}
 
+}
 
 /* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), white),
+    url("/team2project-1/assets/header.jpg");
+  background-size: contain;
+
 }
 
 /* Brand */
-.brand a, .brand img{
-    display: block;
+.brand a,
+.brand img {
+  display: block;
+}
+
+.brand:hover {
+  opacity: 0.5;
 }
 
 /* Menu */
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-nav ul li{
-    display: inline-block;
-    margin: 0 5px;
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
 }
 
-nav ul li a{
-    color:black;
-    padding: 10px 15px;
-    font-size: 18px;
-    display: block;
-    text-decoration: none;
+nav ul li a {
+  color: black;
+  padding: 10px 15px;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
 }
 
-nav ul li a:hover{
-    background-color: rgb(56, 213, 24);
-    color: rgb(255, 255, 255,1);
+nav ul li a:hover {
+  font-size: 24px;
+  background-color: rgb(56, 213, 24);
+  transition: ease 1s;
+  border-radius: 10px;
+  text-shadow: 0px 0px 15px white;
+  font-weight: 700;
+}
+.btn1 {
+  background-image: url("/team2project-1/assets/button1.jpg");
+}
+.btn2 {
+  background-image: url("/team2project-1/assets/button2.jpg");
+}
+.btn3 {
+  background-image: url("/team2project-1/assets/button3.jpg");
+}
+.btn4 {
+  background-image: url("/team2project-1/assets/button4.jpg");
 }
 
 /* Slider */
-.slider img{
-    display: block;
+.slider img {
+  display: block;
 }
 
 /* Main */
-main{
-    display: flex;
+main {
+  display: flex;
 }
 
 /* Article */
-article{
-    width: 70%;
-    padding: 30px;
+article {
+  width: 70%;
+  padding: 30px;
 }
 
-article img{
-    padding-right: 30px;
+article img {
+  padding-right: 30px;
 }
 
-/* Aside */
+
 aside{
     width: 30%;
-    padding: 20px;
-    background-color: lightgray;
+ background-image: url('https://media.istockphoto.com/id/1218172915/photo/spring-flower-background-daffodils-against-a-clear-blue-sky.jpg?s=612x612&w=0&k=20&c=tZu7HVbq3yVRHueGK2ly5l4tsCqUjlgGeIMm85tg0aQ=');
+   background-size: cover;
+ padding: 20px;
     border-left: 1px dashed black;
+    color: rgb(8, 93, 33);
 }
-
+ 
 .widget{
     margin-bottom: 50px;
 }
@@ -104,31 +137,91 @@ aside{
     float: left;
     /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
     margin: 0 10px 5px 0;
-    border: 5px solid red;
+    border: 2px solid rgb(12, 103, 22);
+    border-radius: 15px;
 }
 
 /* Links */
 
-.links ul{
-    list-style-type: square;
-    padding-left: 18px;
-    margin: 0;
+.links ul {
+  list-style-type: square;
+  padding-left: 18px;
+  margin: 0;
 }
+
+
 
 .links ul li{
     margin-bottom: 10px;
+    color: rgb(8, 93, 33);
 }
 
 /* Footer */
 
-footer{
-    background-color: lightgray;
-    border-top: 1px solid black;
-    text-align: center;
-    padding: 25px 0;
+footer {
+  background-color: lightgray;
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 25px 0;
 }
 
-footer p{
-    margin:0;
-    text-shadow: 2px 2px darkgray;
+footer p {
+  margin: 0;
+  text-shadow: 2px 2px darkgray;
+}
+
+.form_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dane_osobowe, .umiejetnosci{
+    display: flex;
+    background-color: rgb(200, 200, 200) ;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#btn{
+    margin: 2% 2% 2% 0;
+    padding: 2%;
+    font-weight: 700;
+    font-size: larger;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  nav ul li {
+    display: block;
+  }
+  .slider {
+    display: none;
+  }
+  header {
+    border-bottom: 1px solid gray;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+
+  .links {
+    float: right;
+  }
+
+  .links h4,
+  .links ul {
+    display: inline;
+  }
+  .links ul li {
+    display: inline;
+  }
 }
