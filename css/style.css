@@ -21,7 +21,6 @@ img {
 }
 
 /* Container */
-
 #container{
     max-width: 1000px;
     border: 2px solid blue;
@@ -37,12 +36,20 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), white),
+    url("/team2project-1/assets/header.jpg");
+  background-size: contain;
+
 }
 
 /* Brand */
 .brand a,
 .brand img {
   display: block;
+}
+
+.brand:hover {
+  opacity: 0.5;
 }
 
 /* Menu */
@@ -63,11 +70,29 @@ nav ul li a {
   font-size: 18px;
   display: block;
   text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
 }
 
 nav ul li a:hover {
+  font-size: 24px;
   background-color: rgb(56, 213, 24);
-  color: rgb(255, 255, 255, 1);
+  transition: ease 1s;
+  border-radius: 10px;
+  text-shadow: 0px 0px 15px white;
+  font-weight: 700;
+}
+.btn1 {
+  background-image: url("/team2project-1/assets/button1.jpg");
+}
+.btn2 {
+  background-image: url("/team2project-1/assets/button2.jpg");
+}
+.btn3 {
+  background-image: url("/team2project-1/assets/button3.jpg");
+}
+.btn4 {
+  background-image: url("/team2project-1/assets/button4.jpg");
 }
 
 /* Slider */
@@ -90,6 +115,7 @@ article img {
   padding-right: 30px;
 }
 
+
 aside{
     width: 30%;
  background-image: url('https://media.istockphoto.com/id/1218172915/photo/spring-flower-background-daffodils-against-a-clear-blue-sky.jpg?s=612x612&w=0&k=20&c=tZu7HVbq3yVRHueGK2ly5l4tsCqUjlgGeIMm85tg0aQ=');
@@ -109,7 +135,6 @@ aside{
     margin: 0 10px 5px 0;
     border: 2px solid rgb(12, 103, 22);
     border-radius: 15px;
-
 }
 
 /* Links */
@@ -121,10 +146,10 @@ aside{
 }
 
 
+
 .links ul li{
     margin-bottom: 10px;
     color: rgb(8, 93, 33);
-
 }
 
 /* Footer */
@@ -136,6 +161,10 @@ footer {
   padding: 25px 0;
 }
 
+footer p {
+  margin: 0;
+  text-shadow: 2px 2px darkgray;
+}
 
 .form_1{
     display: flex;
@@ -153,11 +182,6 @@ footer {
     padding: 2%;
     font-weight: 700;
     font-size: larger;
-}
-=======
-footer p {
-  margin: 0;
-  text-shadow: 2px 2px darkgray;
 }
 
 @media screen and (max-width: 800px) {
@@ -197,4 +221,3 @@ footer p {
     display: inline;
   }
 }
-
