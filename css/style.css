@@ -87,23 +87,26 @@ article img {
   padding-right: 30px;
 }
 
-/* Aside */
-aside {
-  width: 30%;
-  padding: 20px;
-  background-color: lightgray;
-  border-left: 1px dashed black;
+aside{
+    width: 30%;
+ background-image: url('https://media.istockphoto.com/id/1218172915/photo/spring-flower-background-daffodils-against-a-clear-blue-sky.jpg?s=612x612&w=0&k=20&c=tZu7HVbq3yVRHueGK2ly5l4tsCqUjlgGeIMm85tg0aQ=');
+   background-size: cover;
+ padding: 20px;
+    border-left: 1px dashed black;
+    color: rgb(8, 93, 33);
+}
+ 
+.widget{
+    margin-bottom: 50px;
 }
 
-.widget {
-  margin-bottom: 50px;
-}
+.widget img{
+    float: left;
+    /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
+    margin: 0 10px 5px 0;
+    border: 2px solid rgb(12, 103, 22);
+    border-radius: 15px;
 
-.widget img {
-  float: left;
-  /* padding: 0 10px 5px 0; -alternatywne rozw w przypadku braku borderu */
-  margin: 0 10px 5px 0;
-  border: 5px solid red;
 }
 
 /* Links */
@@ -114,8 +117,11 @@ aside {
   margin: 0;
 }
 
-.links ul li {
-  margin-bottom: 10px;
+
+.links ul li{
+    margin-bottom: 10px;
+    color: rgb(8, 93, 33);
+
 }
 
 /* Footer */
