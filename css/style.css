@@ -34,7 +34,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-  background-image: url("/team2project-1/assets/header.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), white),
+    url("/team2project-1/assets/header.jpg");
   background-size: contain;
 }
 
@@ -42,6 +43,10 @@ header {
 .brand a,
 .brand img {
   display: block;
+}
+
+.brand:hover {
+  opacity: 0.5;
 }
 
 /* Menu */
@@ -62,8 +67,18 @@ nav ul li a {
   font-size: 18px;
   display: block;
   text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
 }
 
+nav ul li a:hover {
+  font-size: 24px;
+  background-color: rgb(56, 213, 24);
+  transition: ease 1s;
+  border-radius: 10px;
+  text-shadow: 0px 0px 15px white;
+  font-weight: 700;
+}
 .btn1 {
   background-image: url("/team2project-1/assets/button1.jpg");
 }
@@ -75,15 +90,6 @@ nav ul li a {
 }
 .btn4 {
   background-image: url("/team2project-1/assets/button4.jpg");
-}
-
-nav ul li a:hover {
-  font-size: 24px;
-  background-color: rgb(56, 213, 24);
-  transition: ease 1s;
-  border-radius: 10px;
-  text-shadow: 0px 0px 15px white;
-  font-weight: 700;
 }
 
 /* Slider */
