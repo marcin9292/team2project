@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDV miniprojekt1</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <section class="brand">
+          <a href="index.html">
+            <img src="https://www.unsplash.it/150/60?image=919" alt="LOGO" />
+          </a>
+        </section>
+        <nav>
+          <!-- szybkie stworzenie listy do menu
+            ul>li*4>a
+            -->
+          <ul>
+            <li>
+              <a href="index.html">Strona Domowa</a>
+            </li>
+            <li>
+              <a href="#">Produkty</a>
+            </li>
+            <li>
+              <a href="#">Cennik</a>
+            </li>
+            <li>
+              <a href="#">Skontaktuj się z nami</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section class="slider">
+        <img src="https://unsplash.it/1000/300?image=913" alt="slider" />
+      </section>
+      <main>
+        <article class="form_1">
+            <h2>Formularz</h2>
+          
+            <form action="" class="form">
+                <h3>Dane osobowe:</h3>
+                <fieldset class="dane_osobowe">
+                    <label for="name" class="gri">
+                        <span>Imię: </span>
+                        <input type="text" name="name">
+                    </label>
+                    <label for="family_name" class="gri">
+                        <span>Nazwisko: </span>
+                        <input type="text" name="family_name">
+                    </label>
+                    <label for="date" class="gri">
+                        <span>Data urodzenia: </span>
+                        <input type="date" name="date">
+                    </label>
+
+                </fieldset>
+                <h3>Umiejętności:</h3>
+                
+                <fieldset class="umiejetnosci">
+                    <label for="hobby" class="gri">
+                        <span>Twoje hobby:</span>
+                        <span class="gri2">
+                            <span><input type="radio" name="hobbies" id="" checked value="volleyball" />Siatkówka</span>
+                            <span><input type="radio" name="hobbies" id="" value="football" />Pilka nozna</span>
+                            <span><input type="radio" name="hobbies" id="" value="swimming" /> Pływanie</span>
+                        </span>
+                    </label>
+                    <label for="skills" class="gri">
+                        <span>Twoje umiejętności:</span>
+                        <span class="gri2">
+                           <span><input type="checkbox" name="skills" id="" checked value="html-css" /> HTML/CSS</span>  
+                            <span><input type="checkbox" name="skills" id="" value="javascript" /> JavaScript </span>
+                            <span><input type="checkbox" name="skills" id="" value="angular" /> Angular </span>
+                        </span>
+                    </label>
+                    <label for="city" class="gri">
+                        <span>Twoje miasto:</span>
+                        <select name="cities" id="cities">
+                            <option value="krakow">Kraków</option>
+                            <option value="katowice" selected>Katowice</option>
+                            <option value="warszawa">Warszawa</option>
+                          </select>
+                    </label>
+                    
+                </fieldset>
+                
+
+                    <label for="" class="gri">
+                        <span><button id="btn">Zatwierdź</button></span>
+                        
+                        
+                    </label>
+                
+
+            </form>
+        </article>
+        <aside>
+          <section class="widget">
+            <h3>About author</h3>
+            <img src="https://unsplash.it/100/100?image=1062" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime est corrupti tempora eveniet inventore rem suscipit consequuntur mollitia. Quod ut ipsum pariatur doloremque, est nam optio corrupti consequatur sit ratione.
+              Tempora dolor itaque laborum possimus. Accusantium animi adipisci temporibus itaque molestias dignissimos dicta sed sint provident natus nemo unde ducimus, aut odio maxime, expedita officiis repudiandae sapiente et nam maiores?
+              Vel reiciendis at quos id eligendi sed quibusdam, eaque quam enim optio beatae commodi suscipit quod unde dolores tempore rem officiis sapiente recusandae velit dolor. Pariatur accusantium officiis saepe. Perspiciatis.
+              Quam inventore cumque nemo consequatur odio est itaque aperiam facilis error minima fugiat quis aspernatur earum, sunt excepturi sint? Consectetur nobis quas, accusamus ratione perferendis repellat reiciendis eaque voluptates tempora.
+            </p>
+          </section>
+          <section class="links">
+            <h4>Links:</h4>
+            <!-- ul>li*3>a -->
+            <ul>
+              <li>
+                <a href="https://www.interia.pl" target="_blank">INTERIA</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.interia.pl"
+                  >Studia frontend</a
+                >
+              </li>
+              <li><a href="https://onet.pl">Onet</a></li>
+            </ul>
+          </section>
+        </aside>
+      </main>
+      <footer>
+        <p>Copyright &copy; by Student of Frontend </p>
+      </footer>
+    </div>
+  </body>
+</html>
