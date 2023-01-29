@@ -132,3 +132,20 @@ footer p{
     margin:0;
     text-shadow: 2px 2px darkgray;
 }
+.form_1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.dane_osobowe, .umiejetnosci{
+    display: flex;
+    background-color: rgb(200, 200, 200) ;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#btn{
+    margin: 2% 2% 2% 0;
+    padding: 2%;
+    font-weight: 700;
+    font-size: larger;
+}
