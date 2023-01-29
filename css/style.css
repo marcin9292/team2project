@@ -8,10 +8,11 @@
 }
 
 /* Body */
-body {
-  margin: 0;
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
+
+body{
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -20,12 +21,14 @@ img {
 }
 
 /* Container */
-#container {
-  max-width: 1000px;
-  border: 2px solid black;
-  margin: 0 auto;
-  border-radius: 5px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+
+#container{
+    max-width: 1000px;
+    border: 2px solid blue;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.877);
+
 }
 
 /* Header */
